@@ -1,0 +1,1 @@
+bsub -e align_cow_serial.err -o align_cow_serial.out ./rsem_alignScript.sh
