@@ -1,0 +1,16 @@
+#OMG use blat -_- can use custom command line version. is intron/exon aware -__-
+
+blat -t=dna -q=dna bull_entireY.seq bullYgenes output.psl
+
+#http://lists.open-bio.org/pipermail/bioperl-l/2011-July/035429.html
+#or just search "psl2gff"
+#ftp://ftp.wormbase.org/pub/wormbase/nGASP/submissions_phaseII/confirmed/GENEID/psl2gff-fast.pl
+
+#only keep alignments with mismatches < 20 
+awk '{if($2<2){print $0}' output.psl
+
+#./psl2gff.pf output.psl
+./psl2gff_flybase.pl hand_filtered_output.psl
+
+awk '{NewEntry="ID="$9";Parent="$9";Name="$9";gbkey=mRNA;gene="$9";transcript_id="$9;$9=NewEntry;print $0}' hand_filtered_output.gff> parseable_hand_filtered_output.gff
+sed -ie 's/ /\t/g' parseable_hand_filtered_output.gff
