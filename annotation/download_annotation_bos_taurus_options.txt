@@ -1,0 +1,16 @@
+NCBI
+https://www.ncbi.nlm.nih.gov/assembly/?term=txid9913[Organism:noexp] --> "download assemblies" 
+https://www.ncbi.nlm.nih.gov/assembly/GCF_000003205.7 --> from clicking on an assembly
+--> leads to ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/003/205/GCA_000003205.6_Btau_5.0.1 ("download genbank assembly")
+-> ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/003/205/GCA_000003205.6_Btau_5.0.1/GCA_000003205.6_Btau_5.0.1_assembly_structure/Primary_Assembly/assembled_chromosomes/FASTA/
+-> ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/000/003/205/GCA_000003205.6_Btau_5.0.1/GCA_000003205.6_Btau_5.0.1_genomic.fna.gz
+
+https://www.ncbi.nlm.nih.gov/genome?term=bos%20taurus
+
+
+UCSC
+http://hgdownload.soe.ucsc.edu/downloads.html#cow --> alt use this. use bostau7
+
+ENSEMBL
+ftp://ftp.ensembl.org/pub/release-94/fasta/bos_taurus/dna/
+
